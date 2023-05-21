@@ -1,4 +1,9 @@
 package CaesarCipher;
 
-public class Decrypt {
+import Constants.CaesarOperation ;
+
+public class Decrypt extends Cipher{
+    public Decrypt(String path, int key){
+        super(path, CaesarOperation.DECRYPT, key * -1);
+    }
 }
